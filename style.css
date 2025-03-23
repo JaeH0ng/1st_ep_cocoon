@@ -109,7 +109,7 @@ section p {
   line-height: 2.2;
   background: #fff8f0;
   color: #333;
-  padding: 1.5rem;
+  padding: 0.8rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   white-space: pre-wrap;
@@ -149,6 +149,6 @@ footer a:hover {
 
   .lyrics {
     font-size: 1.3rem;
-    padding: 1rem;
+    padding: 0.8rem;
   }
 }
