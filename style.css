@@ -11,8 +11,7 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  margin: 0;
-  background-color: #f9f9f9;
+  background-color: #fdf0f0;
   color: #333;
   line-height: 1.6;
 }
@@ -20,68 +19,61 @@ body {
 /* 헤더 */
 header {
   text-align: center;
-  padding: 3rem 1rem;
-  background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 4rem 1rem 2rem;
+  background: #6a0d25; /* 진한 크림슨 */
+  color: #fff;
+  border-bottom: 6px solid #e63946;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 header p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.8;
 }
 
-/* 기존 인스타 버튼 (필요 시 유지 가능) */
-.insta-link {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.7rem 1.2rem;
-  background: #ff4081;
-  color: #fff;
-  text-decoration: none;
+/* 소셜 버튼 영역 */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* 아이콘 링크 (인스타, 사운드클라우드 등) */
+.icon-link {
+  background-color: #fff;
+  color: #6a0d25;
+  padding: 0.6rem 1rem;
   border-radius: 8px;
   font-weight: bold;
-  transition: background 0.3s;
-}
-
-.insta-link:hover {
-  background: #e73370;
-}
-
-/* 아이콘 링크 공통 스타일 (인스타그램, 사운드클라우드 등) */
-.icon-link {
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* 아이콘과 텍스트 간 간격 */
-  font-size: 1rem;
-  text-decoration: none;
-  color: #333;
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  transition: color 0.3s;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .icon-link i {
-  font-size: 26px; /* 아이콘 크기 */
-  background: none; /* 배경 제거 */
-  color: #ff4081;
+  font-size: 20px;
+  color: #6a0d25;
 }
 
 .icon-link:hover {
-  color: #e73370;
-}
-
-.icon-link:hover i {
-  color: #e73370;
+  background-color: #f8d7da;
+  border-color: #fff;
+  color: #6a0d25;
 }
 
 /* 네비게이션 */
 nav {
-  background: #333;
+  background: #6a0d25;
 }
 
 nav ul {
@@ -89,10 +81,6 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0;
 }
 
 nav ul li a {
@@ -104,10 +92,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #555;
+  background: #8e1c3a;
 }
 
-/* 메인 컨텐츠 */
+/* 메인 콘텐츠 */
 main {
   padding: 2rem 1rem;
   max-width: 800px;
@@ -122,6 +110,7 @@ section {
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #6a0d25;
 }
 
 section p {
@@ -147,13 +136,13 @@ section p {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background: #333;
+  background: #6a0d25;
   color: #fff;
   font-size: 0.9rem;
 }
 
 footer a {
-  color: #ff4081;
+  color: #ffccda;
   text-decoration: none;
 }
 
